@@ -36,7 +36,7 @@ export default function Home() {
 											<p className='opacity-25 col-start-1 col-end-2 group-hover:opacity-50'>
 												{item.date}
 											</p>
-											<p className='col-start-2 col-end-9 opacity-50 group-hover:opacity-100'>
+											<p className='col-start-2 col-end-9 opacity-60 group-hover:opacity-100'>
 												{item.title}
 											</p>
 
