@@ -7,6 +7,18 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
 	title: 'bzrblog',
 	description: 'one mans thoughts',
+	icons: {
+		icon: [
+			{
+				media: '(prefers-color-scheme: light)',
+				url: 'images/yellow.jpg',
+			},
+			{
+				media: '(prefers-color-scheme: dark)',
+				url: 'images/yellow.jpg',
+			},
+		],
+	},
 };
 
 export default function RootLayout({
