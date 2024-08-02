@@ -5,6 +5,7 @@
 :root {
 	--foreground-rgb: 0, 0, 0; /*text*/
 	--background-rgb: 214, 219, 220; /*background*/
+	--clagnut-red: '#dc423b';
 	background-color: rgb(var(--background-rgb));
 	max-width: 1366px;
 }
@@ -13,6 +14,7 @@
 	:root {
 		--foreground-rgb: 255, 255, 255;
 		--background-rgb: 0, 0, 0;
+		--clagnut-red: '#dc423b';
 		--background-jason: #393c42;
 		background-color: var(--background-jason);
 	}
