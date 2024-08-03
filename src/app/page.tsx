@@ -9,6 +9,11 @@ export default function Home() {
 	const handleNavigation = () => {
 		router.push('/messy');
 	};
+
+	const handleClick = (id: any) => {
+		router.push(`/post/${id}`);
+	};
+
 	return (
 		<main>
 			<NextUIProvider>
@@ -27,10 +32,8 @@ export default function Home() {
 							<div className='mt-10 w-3/4'>
 								{data.map((item, index) => {
 									return (
-										<div className='mb-8'>
-											<div
-												key={index}
-												className='grid grid-cols-8 grid-flow-row group hover:cursor-pointer'>
+										<div key={index} className='mb-8' onClick={() => handleClick(index)}>
+											<div className='grid grid-cols-8 grid-flow-row group hover:cursor-pointer'>
 												<p className='opacity-25 col-start-1 col-end-2 group-hover:opacity-50'>
 													{item.date}
 												</p>
