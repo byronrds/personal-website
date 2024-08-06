@@ -5,7 +5,9 @@ import { NextUIProvider } from '@nextui-org/react';
 import { Button, ButtonGroup } from '@nextui-org/button';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Sidebar } from '../components/Sidebar';
+// import { Sidebar } from '../components/Sidebar';
+import { Topbar } from '@/components/Topbar';
+import { LinkList } from '@/components/LinkList';
 
 export default function Home() {
 	const router = useRouter();
@@ -38,18 +40,21 @@ export default function Home() {
 		<main>
 			<NextUIProvider>
 				<div>
-					<div className='fixed top-0 left-0 w-4 h-full bg-[#dd6232]'></div>
-					{/* 
-							<div className='ml-6'>
-								<p className='text-2xl mt-8 mb-2 text-left'>bzrblog</p>
-								<ul>
-									<li className='text-sm text-left'>About</li>
-									<li className='text-sm text-left'>Messy</li>
-								</ul>
-							</div>
-						</div> */}
+					{/* <div className='fixed top-0 left-0 w-full h-10 bg-[#dc423b]'>
+						<p className='ml-8'>bzrblog.xyz</p>
+					</div> */}
 
-					<div className='w-2/3 m-auto'>
+					<div className='fixed top-0 left-0 w-4 h-full bg-[#dc423b]'></div>
+					<div>
+						<LinkList />
+					</div>
+
+					{/* <div className='fixed top-0 left-0 h-8 w-full bg-[#dd6232]'></div> */}
+					{/* <Topbar /> */}
+
+					{/* <p className='bg-[#dd6232] p-4 w-[160px] text-xl mx-8 my-10'>bzrblog.xyz</p> */}
+
+					<div className='mx-14'>
 						<div className='mt-10 w-3/4'>
 							{allPosts &&
 								allPosts.map((item, index) => {

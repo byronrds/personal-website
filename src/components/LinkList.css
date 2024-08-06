@@ -1,0 +1,14 @@
+.link .active {
+	font-weight: bold;
+	color: #c91f1f; /* Change to the desired highlight color */
+}
+
+.link {
+	font-weight: bold;
+	color: #e11515; /* Change to the desired highlight color */
+}
+
+.link:hover {
+	font-weight: bold;
+	color: #30e115; /* Change to the desired highlight color */
+}
