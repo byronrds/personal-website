@@ -3,6 +3,9 @@ import { data } from '../../dummydata';
 import { useRouter } from 'next/navigation';
 import { NextUIProvider } from '@nextui-org/react';
 import { Button, ButtonGroup } from '@nextui-org/button';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import { Sidebar } from '../components/Sidebar';
 
 export default function Home() {
 	const router = useRouter();
@@ -14,41 +17,59 @@ export default function Home() {
 		router.push(`/post/${id}`);
 	};
 
+	interface BlogPost {
+		title: string;
+		created_at: string;
+		summary: string;
+	}
+
+	const [allPosts, setAllPosts] = useState<BlogPost[] | null>(null);
+
+	useEffect(() => {
+		const fetchAllPostsMetadata = async () => {
+			const postsMetadata = await axios.get('/api/posts/');
+			console.log(postsMetadata);
+			setAllPosts(postsMetadata.data);
+		};
+		fetchAllPostsMetadata();
+	}, []);
+
 	return (
 		<main>
 			<NextUIProvider>
 				<div>
-					<div className='flex flex-row'>
-						<div className='fixed top-0 left-0 w-36 h-full bg-red-500'></div>
-						<div className='relative mt-8 z-1 w-20'>
-							<p className='text-2xl mb-4'>bzrblog</p>
-							<ul>
-								<li className='text-sm'>About</li>
-								<li className='text-sm'>Messy</li>
-							</ul>
-						</div>
+					<div className='fixed top-0 left-0 w-4 h-full bg-[#dd6232]'></div>
+					{/* 
+							<div className='ml-6'>
+								<p className='text-2xl mt-8 mb-2 text-left'>bzrblog</p>
+								<ul>
+									<li className='text-sm text-left'>About</li>
+									<li className='text-sm text-left'>Messy</li>
+								</ul>
+							</div>
+						</div> */}
 
-						<div className='w-2/3 m-auto'>
-							<div className='mt-10 w-3/4'>
-								{data.map((item, index) => {
+					<div className='w-2/3 m-auto'>
+						<div className='mt-10 w-3/4'>
+							{allPosts &&
+								allPosts.map((item, index) => {
 									return (
 										<div key={index} className='mb-8' onClick={() => handleClick(index)}>
 											<div className='grid grid-cols-8 grid-flow-row group hover:cursor-pointer'>
-												<p className='opacity-25 col-start-1 col-end-2 group-hover:opacity-50'>
-													{item.date}
+												<p className='text-sm opacity-25 col-start-1 col-end-2 group-hover:opacity-50'>
+													{item.created_at}
 												</p>
-												<p className='col-start-2 col-end-9 opacity-60 group-hover:opacity-100'>
+												<p className='text-sm col-start-2 col-end-9 opacity-60 group-hover:opacity-100'>
 													{item.title}
 												</p>
 
-												<p className='col-start-2 col-end-9 opacity-25 group-hover:opacity-50'>
-													{item.blurb}
+												<p className='text-sm col-start-2 col-end-9 opacity-25 group-hover:opacity-50'>
+													{item.summary}
 												</p>
 											</div>
 										</div>
 									);
 								})}
-							</div>
 						</div>
 					</div>
 				</div>

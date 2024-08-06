@@ -26,14 +26,16 @@ export default function Page({ params }: { params: { postId: string } }) {
 	}, []);
 
 	return (
-		<div>
-			{blogPost && (
-				<>
-					<h1>{blogPost.title}</h1>
-					<p>Created on {new Date(blogPost.created_at).toLocaleDateString()}</p>
-					<ReactMarkdown className='markdown'>{blogPost.content.replace(/\\n/g, '\n')}</ReactMarkdown>
-				</>
-			)}
+		<div className='w-2/3 m-auto'>
+			<div className='mt-10'>
+				{blogPost && (
+					<>
+						<h1>{blogPost.title}</h1>
+						<p>{new Date(blogPost.created_at).toLocaleDateString()}</p>
+						<ReactMarkdown className='markdown'>{blogPost.content.replace(/\\n/g, '\n')}</ReactMarkdown>
+					</>
+				)}
+			</div>
 		</div>
 	);
 }
