@@ -19,6 +19,13 @@ export const LinkList = () => {
 						Blog
 					</Link>
 				</li>
+				<p>|</p>
+
+				<li>
+					<Link className={`link ${pathname === '/books' ? 'active' : ''}`} href='/books'>
+						Books
+					</Link>
+				</li>
 			</ul>
 		</div>
 	);

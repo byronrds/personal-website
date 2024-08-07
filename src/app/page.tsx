@@ -46,7 +46,8 @@ export default function Home() {
 						<LinkList />
 					</div>
 					<div className='lg:flex gap-4 ml-8 lg:ml-16 lg:mt-8'>
-						<RandomLinesSVG />
+						{/* <RandomLinesSVG /> */}
+						<img className='h-40' src='/images/IMG_3092.JPG' />
 						<div className='sm:my-10 lg:my-0'>
 							<p className='text-sm'>Byron Richards</p>
 							<a className='text-sm' href='mailto:bxr@byronxr.com'>
