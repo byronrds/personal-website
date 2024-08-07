@@ -37,16 +37,11 @@ export default function Home() {
 	}, []);
 
 	return (
-		<div className='w-1/2 m-auto'>
+		<div className='lg:w-1/2 lg:m-auto'>
 			<div className='fixed w-2 h-full bg-[#dc423b]'></div>
-			<div className='px-12 py-8'>
+			<div className='px-8 lg:px-12 py-8'>
 				<LinkList />
 			</div>
-
-			{/* <div className='fixed top-0 left-0 h-8 w-full bg-[#dd6232]'></div> */}
-			{/* <Topbar /> */}
-
-			{/* <p className='bg-[#dd6232] p-4 w-[160px] text-xl mx-8 my-10'>bzrblog.xyz</p> */}
 
 			<div className='mx-14'>
 				<div className='mt-10'>
@@ -54,7 +49,7 @@ export default function Home() {
 						allPosts.map((item, index) => {
 							return (
 								<div key={index} className='mb-8' onClick={() => handleClick(index)}>
-									<div className='grid grid-cols-8 grid-flow-row group hover:cursor-pointer'>
+									<div className='lg:grid grid-cols-8 grid-flow-row group hover:cursor-pointer'>
 										<p className='text-sm opacity-25 col-start-1 col-end-2 group-hover:opacity-50'>
 											{item.created_at}
 										</p>
