@@ -7,7 +7,7 @@
 	--background-rgb: 214, 219, 220; /*background*/
 	--clagnut-red: '#dc423b';
 	background-color: rgb(var(--background-rgb));
-	max-width: 1366px;
+	max-width: 880px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,13 +19,16 @@
 		background-color: var(--background-jason);
 	}
 }
-
+a {
+	color: rgb(155, 184, 252);
+}
 .markdown > * {
 	all: revert;
 }
 
 body {
 	color: rgb(var(--foreground-rgb));
+
 	/* background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
 }
 
@@ -33,4 +36,8 @@ body {
 	.text-balance {
 		text-wrap: balance;
 	}
+}
+
+.roboto_mono {
+	font-family: var(--font-roboto_mono);
 }

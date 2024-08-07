@@ -39,44 +39,36 @@ export default function Home() {
 	return (
 		<main>
 			<NextUIProvider>
-				<div>
-					{/* <div className='fixed top-0 left-0 w-full h-10 bg-[#dc423b]'>
-						<p className='ml-8'>bzrblog.xyz</p>
-					</div> */}
-
-					<div className='fixed top-0 left-0 w-4 h-full bg-[#dc423b]'></div>
+				<div className='fixed top-0 left-0 w-4 h-full bg-[#dc423b]'></div>
+				<div className='flex gap-4 ml-16 mt-8'>
+					<img className='h-40' src='/images/lines.gif' />
 					<div>
-						<LinkList />
+						<p className='text-sm'>Byron Richards</p>
+						<a className='text-sm' href='mailto:bxr@byronxr.com'>
+							bxr@byronxr.com
+						</a>
+						<p className='text-sm'>Resume</p>
+
+						{/* <img className='mt-4 h-4' src='/images/colorblocks.png' /> */}
 					</div>
-
-					{/* <div className='fixed top-0 left-0 h-8 w-full bg-[#dd6232]'></div> */}
-					{/* <Topbar /> */}
-
-					{/* <p className='bg-[#dd6232] p-4 w-[160px] text-xl mx-8 my-10'>bzrblog.xyz</p> */}
-
-					<div className='mx-14'>
-						<div className='mt-10 w-3/4'>
-							{allPosts &&
-								allPosts.map((item, index) => {
-									return (
-										<div key={index} className='mb-8' onClick={() => handleClick(index)}>
-											<div className='grid grid-cols-8 grid-flow-row group hover:cursor-pointer'>
-												<p className='text-sm opacity-25 col-start-1 col-end-2 group-hover:opacity-50'>
-													{item.created_at}
-												</p>
-												<p className='text-sm col-start-2 col-end-9 opacity-60 group-hover:opacity-100'>
-													{item.title}
-												</p>
-
-												<p className='text-sm col-start-2 col-end-9 opacity-25 group-hover:opacity-50'>
-													{item.summary}
-												</p>
-											</div>
-										</div>
-									);
-								})}
-						</div>
-					</div>
+				</div>
+				<div className='mx-10 my-10'>
+					<p className='mb-4'>
+						<span>$ </span>ls
+					</p>
+					<LinkList />
+				</div>
+				<div className='mx-10 my-10'>
+					<p className='text-sm'>
+						Hi, I’m Byron, a software engineer currently based in Virginia Beach. I work on developing
+						innovative solutions at Capital One Shopping, focusing on enhancing user experience and
+						optimizing online shopping. I graduated with a degree in Computer Science and was actively
+						involved in the Forge/HackCville club at university, where I both participated in and taught the
+						Software Engineering track. In my free time, I enjoy exploring new cities, working on personal
+						projects involving microcontrollers and IoT, and capturing moments with my camera. I’m
+						passionate about entrepreneurship, digital privacy, and continually learning to empower aspiring
+						engineers.
+					</p>
 				</div>
 			</NextUIProvider>
 		</main>

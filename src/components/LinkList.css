@@ -1,14 +1,14 @@
 .link .active {
 	font-weight: bold;
 	color: #c91f1f; /* Change to the desired highlight color */
+	text-decoration-line: underline;
 }
 
 .link {
-	font-weight: bold;
-	color: #e11515; /* Change to the desired highlight color */
+	color: #e91919; /* Change to the desired highlight color */
+	text-decoration-line: underline;
 }
 
 .link:hover {
-	font-weight: bold;
-	color: #30e115; /* Change to the desired highlight color */
+	color: #e19615; /* Change to the desired highlight color */
 }
