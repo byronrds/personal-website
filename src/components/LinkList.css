@@ -1,11 +1,10 @@
-.link .active {
-	font-weight: bold;
+.link.active {
 	color: #c91f1f; /* Change to the desired highlight color */
 	text-decoration-line: underline;
 }
 
 .link {
-	color: #e91919; /* Change to the desired highlight color */
+	color: #fbfbfb; /* Change to the desired highlight color */
 	text-decoration-line: underline;
 }
 
