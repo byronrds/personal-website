@@ -10,7 +10,7 @@ export const Topbar = () => {
 				<ul className='flex gap-4 items-center'>
 					<li>
 						<Link className={`link ${pathname === '/' ? 'active' : ''}`} href='/'>
-							bzrblog.xyz
+							byronxr.com
 						</Link>
 					</li>
 					<li>

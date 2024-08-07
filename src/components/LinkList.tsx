@@ -5,24 +5,24 @@ export const LinkList = () => {
 	const pathname = usePathname();
 
 	return (
-		<div className='ml-6 flex'>
+		<div className='flex'>
 			<ul className='flex gap-4 items-center'>
 				<li>
-					<Link className={`link ${pathname === '/' ? 'active' : ''}`} href='/'>
-						bzrblog.xyz
+					<Link className={`link ${pathname === '/' ? 'active' : ''}`} href='/projects'>
+						Projects
 					</Link>
 				</li>
 
 				<li>
-					<Link className={`link ${pathname === '/about' ? 'active' : ''}`} href='/about'>
-						about
+					<Link className={`link ${pathname === '/blog' ? 'active' : ''}`} href='/blog'>
+						Blog
 					</Link>
 				</li>
-				<li>
+				{/* <li>
 					<Link className={`link ${pathname === '/messy' ? 'active' : ''}`} href='/messy'>
 						messy
 					</Link>
-				</li>
+				</li> */}
 			</ul>
 		</div>
 	);
