@@ -8,6 +8,7 @@ import axios from 'axios';
 // import { Sidebar } from '../components/Sidebar';
 import { Topbar } from '@/components/Topbar';
 import { LinkList } from '@/components/LinkList';
+import RandomLinesSVG from '../components/RandomLinesSVG';
 
 export default function Home() {
 	const router = useRouter();
@@ -44,9 +45,9 @@ export default function Home() {
 					<div className='px-8 lg:px-12 py-8'>
 						<LinkList />
 					</div>
-					<div className='flex gap-4 ml-8 lg:ml-16 mt-8'>
-						<img className='h-40' src='/images/lines.gif' />
-						<div>
+					<div className='lg:flex gap-4 ml-8 lg:ml-16 lg:mt-8'>
+						<RandomLinesSVG />
+						<div className='sm:my-10 lg:my-0'>
 							<p className='text-sm'>Byron Richards</p>
 							<a className='text-sm' href='mailto:bxr@byronxr.com'>
 								bxr@byronxr.com
