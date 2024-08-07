@@ -49,13 +49,19 @@ export default function Home() {
 						{/* <RandomLinesSVG /> */}
 						<img className='h-40' src='/images/IMG_3092.JPG' />
 						<div className='sm:my-10 lg:my-0'>
-							<p className='text-sm'>Byron Richards</p>
-							<a className='text-sm' href='mailto:bxr@byronxr.com'>
+							<p className='text-sm mt-4 lg:mt-0'>Byron Richards</p>
+							<a
+								className='text-sm text-[#658FF1] underline underline-offset-2'
+								href='mailto:bxr@byronxr.com'>
 								bxr@byronxr.com
 							</a>
 							<p>
-								<a className='text-sm' href='/resume.pdf' target='_blank' download>
-									Resume
+								<a
+									className='text-sm text-[#658FF1] underline underline-offset-2'
+									href='/resume.pdf'
+									target='_blank'
+									download>
+									Resume (PDF)
 								</a>
 							</p>
 						</div>

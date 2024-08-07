@@ -43,28 +43,23 @@ export default function Home() {
 				<LinkList />
 			</div>
 
-			<div className='mx-14'>
-				<div className='mt-10'>
-					{allPosts &&
-						allPosts.map((item, index) => {
-							return (
-								<div key={index} className='mb-8' onClick={() => handleClick(index)}>
-									<div className='lg:grid grid-cols-8 grid-flow-row group hover:cursor-pointer'>
-										<p className='text-sm opacity-25 col-start-1 col-end-2 group-hover:opacity-50'>
-											{item.created_at}
-										</p>
-										<p className='text-sm col-start-2 col-end-9 opacity-60 group-hover:opacity-100'>
-											{item.title}
-										</p>
+			<div className='mx-14 mt-8'>
+				<p className='text-xl'>Articles</p>
+				{allPosts &&
+					allPosts.map((item, index) => {
+						return (
+							<div key={index} className='mb-8' onClick={() => handleClick(index)}>
+								<div className='group hover:cursor-pointer'>
+									<p className='text-sm opacity-80 group-hover:opacity-100'>{item.title}</p>
 
-										<p className='text-sm col-start-2 col-end-9 opacity-25 group-hover:opacity-50'>
-											{item.summary}
-										</p>
-									</div>
+									<p className='text-sm opacity-40 group-hover:opacity-60'>{item.summary}</p>
+									<p className='text-[#2915e1] text-sm opacity-40 group-hover:opacity-60'>
+										{item.created_at}
+									</p>
 								</div>
-							);
-						})}
-				</div>
+							</div>
+						);
+					})}
 			</div>
 		</div>
 	);

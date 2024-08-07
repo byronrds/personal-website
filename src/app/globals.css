@@ -19,10 +19,10 @@
 		background-color: var(--background-jason);
 	}
 }
-a {
+/* a {
 	color: rgb(101, 143, 241);
 	text-decoration-line: underline;
-}
+} */
 .markdown > * {
 	all: revert;
 }
