@@ -7,7 +7,7 @@
 	--background-rgb: 214, 219, 220; /*background*/
 	--clagnut-red: '#dc423b';
 	background-color: rgb(var(--background-rgb));
-	max-width: 880px;
+	max-width: 1466px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +20,8 @@
 	}
 }
 a {
-	color: rgb(155, 184, 252);
+	color: rgb(38, 93, 222);
+	text-decoration-line: underline;
 }
 .markdown > * {
 	all: revert;

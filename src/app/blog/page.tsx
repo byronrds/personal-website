@@ -37,48 +37,40 @@ export default function Home() {
 	}, []);
 
 	return (
-		<main>
-			<NextUIProvider>
-				<div>
-					{/* <div className='fixed top-0 left-0 w-full h-10 bg-[#dc423b]'>
-						<p className='ml-8'>bzrblog.xyz</p>
-					</div> */}
+		<div className='w-1/2 m-auto'>
+			<div className='fixed w-2 h-full bg-[#dc423b]'></div>
+			<div className='px-12 py-8'>
+				<LinkList />
+			</div>
 
-					<div className='fixed top-0 left-0 w-4 h-full bg-[#dc423b]'></div>
-					<div>
-						<LinkList />
-					</div>
+			{/* <div className='fixed top-0 left-0 h-8 w-full bg-[#dd6232]'></div> */}
+			{/* <Topbar /> */}
 
-					{/* <div className='fixed top-0 left-0 h-8 w-full bg-[#dd6232]'></div> */}
-					{/* <Topbar /> */}
+			{/* <p className='bg-[#dd6232] p-4 w-[160px] text-xl mx-8 my-10'>bzrblog.xyz</p> */}
 
-					{/* <p className='bg-[#dd6232] p-4 w-[160px] text-xl mx-8 my-10'>bzrblog.xyz</p> */}
+			<div className='mx-14'>
+				<div className='mt-10'>
+					{allPosts &&
+						allPosts.map((item, index) => {
+							return (
+								<div key={index} className='mb-8' onClick={() => handleClick(index)}>
+									<div className='grid grid-cols-8 grid-flow-row group hover:cursor-pointer'>
+										<p className='text-sm opacity-25 col-start-1 col-end-2 group-hover:opacity-50'>
+											{item.created_at}
+										</p>
+										<p className='text-sm col-start-2 col-end-9 opacity-60 group-hover:opacity-100'>
+											{item.title}
+										</p>
 
-					<div className='mx-14'>
-						<div className='mt-10 w-3/4'>
-							{allPosts &&
-								allPosts.map((item, index) => {
-									return (
-										<div key={index} className='mb-8' onClick={() => handleClick(index)}>
-											<div className='grid grid-cols-8 grid-flow-row group hover:cursor-pointer'>
-												<p className='text-sm opacity-25 col-start-1 col-end-2 group-hover:opacity-50'>
-													{item.created_at}
-												</p>
-												<p className='text-sm col-start-2 col-end-9 opacity-60 group-hover:opacity-100'>
-													{item.title}
-												</p>
-
-												<p className='text-sm col-start-2 col-end-9 opacity-25 group-hover:opacity-50'>
-													{item.summary}
-												</p>
-											</div>
-										</div>
-									);
-								})}
-						</div>
-					</div>
+										<p className='text-sm col-start-2 col-end-9 opacity-25 group-hover:opacity-50'>
+											{item.summary}
+										</p>
+									</div>
+								</div>
+							);
+						})}
 				</div>
-			</NextUIProvider>
-		</main>
+			</div>
+		</div>
 	);
 }

@@ -8,21 +8,17 @@ export const LinkList = () => {
 		<div className='flex'>
 			<ul className='flex gap-4 items-center'>
 				<li>
-					<Link className={`link ${pathname === '/' ? 'active' : ''}`} href='/projects'>
-						Projects
+					<Link className={`link ${pathname === '/' ? 'active' : ''}`} href='/'>
+						Me
 					</Link>
 				</li>
+				<p>|</p>
 
 				<li>
 					<Link className={`link ${pathname === '/blog' ? 'active' : ''}`} href='/blog'>
 						Blog
 					</Link>
 				</li>
-				{/* <li>
-					<Link className={`link ${pathname === '/messy' ? 'active' : ''}`} href='/messy'>
-						messy
-					</Link>
-				</li> */}
 			</ul>
 		</div>
 	);
