@@ -79,6 +79,62 @@ export default function Home() {
 							aspiring engineers.
 						</p>
 					</div>
+					<div className='mx-10 my-10'>
+						<p className='underline underline-offset-2 mb-4'>Education</p>
+						<p className='text-sm font-semibold'>University of Virginia</p>
+						<p className='text-sm'>B.A. in Computer Science</p>
+						<p className='text-sm'>Graduated 2024</p>
+					</div>
+
+					<div className='mx-10 my-10'>
+						<div className='mb-8'>
+							<p className='underline underline-offset-2 mb-4'>Work</p>
+							<p className='font-semibold text-sm'>Software Engineer, IT Concepts</p>
+							<p className='text-sm mb-2'>June 2023 - Present</p>
+							<ul className='ml-4 list-disc text-sm'>
+								<li>
+									Built scalable backend infrastructure using AWS services, enhancing data management.
+								</li>
+								<li>Developed a mobile app with React Native for employee news and notifications.</li>
+								<li>Designed a secure sign-in website with face recognition, improving security.</li>
+							</ul>
+						</div>
+						<div className='mb-8'>
+							<p className='font-semibold text-sm'>Software Engineer Instructor, Forge</p>
+							<p className='text-sm mb-2'>Aug 2022 - June 2024</p>
+							<ul className='ml-4 list-disc text-sm'>
+								<li>Web development at UVA for 3 seasons. 2 internship swe training sessions.</li>
+								<li>
+									Taught 30+ students software engineering, covering Git, JavaScript, React, and more.
+								</li>
+								<li>
+									Led an AI course where students developed a chatbot, improving customer service.
+								</li>
+							</ul>
+						</div>
+						<div className='mb-8'>
+							<p className='font-semibold text-sm'>Software Engineer, Forge</p>
+							<p className='text-sm mb-2'>May 2023 - December 2023</p>
+							<ul className='ml-4 list-disc text-sm'>
+								<li>
+									Created a full-stack platform with Next.js, TypeScript, and Airtable to connect
+									students with employers.
+								</li>
+								<li>
+									Collaborated in an Agile environment, contributing to task management and code
+									reviews.
+								</li>
+							</ul>
+						</div>
+						<div className='mb-8'>
+							<p className='font-semibold text-sm'>Computer Systems TA, UVA</p>
+							<p className='text-sm mb-2'>Jan 2023 - May 2023</p>
+							<ul className='ml-4 list-disc text-sm'>
+								<li>Taught computer hardware and software concepts to 482 students.</li>
+								<li>Facilitated office hours and assisted with course grading.</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</NextUIProvider>
 		</main>
