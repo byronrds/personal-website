@@ -20,10 +20,15 @@ export const LinkList = () => {
 					</Link>
 				</li>
 				<p>|</p>
-
 				<li>
-					<Link className={`link ${pathname === '/books' ? 'active' : ''}`} href='/books'>
-						Books
+					<Link className={`link ${pathname === '/projects' ? 'active' : ''}`} href='/projects'>
+						Projects
+					</Link>
+				</li>
+				<p>|</p>
+				<li>
+					<Link className={`link ${pathname === '/more' ? 'active' : ''}`} href='/more'>
+						More
 					</Link>
 				</li>
 			</ul>
