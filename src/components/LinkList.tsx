@@ -25,12 +25,6 @@ export const LinkList = () => {
 						Projects
 					</Link>
 				</li>
-				<p>|</p>
-				<li>
-					<Link className={`link ${pathname === '/more' ? 'active' : ''}`} href='/more'>
-						More
-					</Link>
-				</li>
 			</ul>
 		</div>
 	);
