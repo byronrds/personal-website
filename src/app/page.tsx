@@ -114,7 +114,7 @@ export default function Home() {
 						</div>
 						<div className='mb-8'>
 							<p className='font-semibold text-sm'>Software Engineer, Forge</p>
-							<p className='text-sm mb-2'>May 2023 - December 2023</p>
+							<p className='text-sm mb-2'>May 2023 - Dec 2023</p>
 							<ul className='ml-4 list-disc text-sm'>
 								<li>
 									Created a full-stack platform with Next.js, TypeScript, and Airtable to connect

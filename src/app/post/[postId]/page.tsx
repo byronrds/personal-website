@@ -26,8 +26,9 @@ export default function Page({ params }: { params: { postId: string } }) {
 	}, []);
 
 	return (
-		<div className='w-2/3 m-auto'>
-			<div className='mt-10'>
+		<div className='lg:w-1/2 lg:m-auto'>
+			<div className='fixed w-2 h-full bg-[#dc423b]'></div>
+			<div className='px-10 py-10 '>
 				{blogPost && (
 					<>
 						<h1>{blogPost.title}</h1>
