@@ -22,16 +22,16 @@ export default function page() {
 						<p className='text-sm'>
 							A guest sign-in service capturing visitor information, photos, and signatures, stored in S3
 							and DynamoDB. Built with Vite React (TypeScript) and Tailwind for the frontend. Includes
-							facial recognition sign-out using face-api.js.
+							facial recognition sign-out using face-api.js. The app is dockerized and runs on ECS.
 						</p>
-						<div className='text-sm opacity-50 flex gap-2 items-center'>
+						<div className='mt-1 text-sm opacity-50 flex gap-2 items-center'>
 							<p>React (TypeScript)</p>
-							<RxDotFilled />
-							<p>Tailwind</p>
 							<RxDotFilled />
 							<p>AWS</p>
 							<RxDotFilled />
-							<p>face-api.js</p>
+							<p>Docker</p>
+							<RxDotFilled />
+							<p>Tailwind</p>
 						</div>
 					</div>
 					<br></br>
@@ -42,7 +42,7 @@ export default function page() {
 							submit forms, and the data is stored in SharePoint and fetched into the app. Built with a
 							serverless backend and integrates with Microsoft API for work account sign-in.
 						</p>
-						<div className='text-sm opacity-50 flex gap-2 items-center'>
+						<div className='mt-1 text-sm opacity-50 flex gap-2 items-center'>
 							<p>React Native (Expo)</p>
 							<RxDotFilled />
 							<p>AWS</p>
@@ -60,7 +60,7 @@ export default function page() {
 							AirTable for backend management, allowing seamless filtering and messaging between talent
 							and companies.
 						</p>
-						<div className='opacity-50 flex gap-2 items-center'>
+						<div className='mt-1 text-sm opacity-50 flex gap-2 items-center'>
 							<p>NextJS</p>
 							<RxDotFilled />
 							<p>Airtable</p>
@@ -71,13 +71,13 @@ export default function page() {
 					<div>
 						<p className='text-md mb-2'>Personal Portfolio</p>
 						<p className='text-sm'>
-							This app. A simple, clean portfolio showcasing my work. Built with NextJS, styled with
-							Tailwind CSS, and connected to Google Firestore for data storage.
+							This app! A simple, clean portfolio showcasing my work. Built with NextJS, styled with
+							Tailwind CSS, and connected to Google Firestore for blog data.
 						</p>
-						<div className='opacity-50 flex gap-2 items-center'>
+						<div className='mt-1 text-sm opacity-50 flex gap-2 items-center'>
 							<p>NextJS</p>
 							<RxDotFilled />
-							<p>Tailwind CSS</p>
+							<p>Tailwind</p>
 							<RxDotFilled />
 							<p>Google Firestore</p>
 						</div>
