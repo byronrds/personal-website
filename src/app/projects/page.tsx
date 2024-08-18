@@ -20,12 +20,13 @@ export default function page() {
 					<div>
 						<p className='text-md mb-2'>Visitor App</p>
 						<p className='text-sm'>
-							A guest sign-in service capturing visitor information, photos, and signatures, stored in S3
-							and DynamoDB. Built with Vite React (TypeScript) and Tailwind for the frontend. Includes
-							facial recognition sign-out using face-api.js. The app is dockerized and runs on ECS.
+							A guest sign-in service capturing visitor information, photos, and signatures, stored in AWS
+							S3 and DynamoDB. Built with Vite React (TypeScript) and styled using Tailwind CSS, the app
+							features facial recognition sign-out powered by face-api.js. It is dockerized and runs on
+							ECS.
 						</p>
 						<div className='mt-1 text-sm opacity-50 flex gap-2 items-center'>
-							<p>React (TypeScript)</p>
+							<p>React</p>
 							<RxDotFilled />
 							<p>AWS</p>
 							<RxDotFilled />
@@ -36,20 +37,18 @@ export default function page() {
 					</div>
 					<br></br>
 					<div>
-						<p className='text-md mb-2'>Mobile App</p>
+						<p className='text-md mb-2'>Employee Mobile App</p>
 						<p className='text-sm'>
-							An employee resource hub for accessing tools on the go. Includes a reward system where users
-							submit forms, and the data is stored in SharePoint and fetched into the app. Built with a
-							serverless backend and integrates with Microsoft API for work account sign-in.
+							An employee resource hub providing tools on the go, with a reward system where users submit
+							forms, and data is stored in SharePoint and fetched into the app. Built with React Native
+							(Expo) and a serverless backend, integrating with Microsoft API for work account sign-in.
 						</p>
 						<div className='mt-1 text-sm opacity-50 flex gap-2 items-center'>
-							<p>React Native (Expo)</p>
+							<p>React Native</p>
 							<RxDotFilled />
 							<p>AWS</p>
 							<RxDotFilled />
 							<p>Microsoft API</p>
-							<RxDotFilled />
-							<p>SharePoint</p>
 						</div>
 					</div>
 					<br></br>
@@ -57,7 +56,7 @@ export default function page() {
 						<p className='text-md mb-2'>Talent Board</p>
 						<p className='text-sm'>
 							A NextJS app for building and sharing resumes with potential employers. Integrates with
-							AirTable for backend management, allowing seamless filtering and messaging between talent
+							AirTable for backend management, enabling seamless filtering and messaging between talent
 							and companies.
 						</p>
 						<div className='mt-1 text-sm opacity-50 flex gap-2 items-center'>

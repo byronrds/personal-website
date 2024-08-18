@@ -69,14 +69,14 @@ export default function Home() {
 
 					<div className='mx-10 my-10'>
 						<p className='text-sm'>
-							Hi, I’m Byron, a software engineer currently based in Virginia Beach. I work on developing
-							innovative solutions at Capital One Shopping, focusing on enhancing user experience and
-							optimizing online shopping. I graduated with a degree in Computer Science and was actively
-							involved in the Forge/HackCville club at university, where I both participated in and taught
-							the Software Engineering track. In my free time, I enjoy exploring new cities, working on
-							personal projects involving microcontrollers and IoT, and capturing moments with my camera.
-							I’m passionate about entrepreneurship, digital privacy, and continually learning to empower
-							aspiring engineers.
+							Hi, I’m Byron, a software engineer currently working remotely in Virginia. I develop
+							innovative solutions at IT Concepts, focusing on frontend development while also working
+							with AWS serverless technologies for backend systems. I graduated with a degree in Computer
+							Science and was actively involved in Forge, where I got to teach and work on cool projects
+							with peers. In my free time, I enjoy reading, writing, running, surfing, traveling, and
+							spending time in nature. I’m passionate about entrepreneurship, exploring the impact of
+							technology on humanity, and learning about AI and its intersection with human life. I also
+							enjoy meeting new people, learning from their experiences, and helping them grow.
 						</p>
 					</div>
 					<div className='mx-10 my-10'>
@@ -89,49 +89,64 @@ export default function Home() {
 					<div className='mx-10 my-10'>
 						<div className='mb-8'>
 							<p className='underline underline-offset-2 mb-4'>Work</p>
-							<p className='font-semibold text-sm'>Software Engineer, IT Concepts</p>
-							<p className='text-sm mb-2'>June 2023 - Present</p>
+							<p className='font-semibold text-sm'>Software Engineer</p>
+							<p className='text-sm mb-2 italic'>IT Concepts | June 2023 - Present</p>
 							<ul className='ml-4 list-disc text-sm'>
+								<li>Built scalable backend systems with AWS Lambda, S3, API Gateway, and DynamoDB.</li>
+								<li>Developed React Native mobile app for internal communication and news updates.</li>
 								<li>
-									Built scalable backend infrastructure using AWS services, enhancing data management.
-								</li>
-								<li>Developed a mobile app with React Native for employee news and notifications.</li>
-								<li>Designed a secure sign-in website with face recognition, improving security.</li>
-							</ul>
-						</div>
-						<div className='mb-8'>
-							<p className='font-semibold text-sm'>Software Engineer Instructor, Forge</p>
-							<p className='text-sm mb-2'>Aug 2022 - June 2024</p>
-							<ul className='ml-4 list-disc text-sm'>
-								<li>Web development at UVA for 3 seasons. 2 internship swe training sessions.</li>
-								<li>
-									Taught 30+ students software engineering, covering Git, JavaScript, React, and more.
-								</li>
-								<li>
-									Led an AI course where students developed a chatbot, improving customer service.
+									Created a secure office sign-in website with face recognition using TensorFlow’s
+									face-api.js.
 								</li>
 							</ul>
 						</div>
 						<div className='mb-8'>
-							<p className='font-semibold text-sm'>Software Engineer, Forge</p>
-							<p className='text-sm mb-2'>May 2023 - Dec 2023</p>
+							<p className='font-semibold text-sm'>Software Engineer Instructor</p>
+							<p className='text-sm mb-2 italic'>Forge | Aug 2022 - June 2024</p>
 							<ul className='ml-4 list-disc text-sm'>
 								<li>
-									Created a full-stack platform with Next.js, TypeScript, and Airtable to connect
-									students with employers.
+									Taught web development for three consecutive semesters at UVA and led two software
+									engineering internship programs.
 								</li>
 								<li>
-									Collaborated in an Agile environment, contributing to task management and code
-									reviews.
+									Designed and instructed 3-week, full-day (8:30 AM - 5:30 PM) summer training
+									sessions covering Git, React, Express.js, APIs (including OpenAI), and debugging.
+								</li>
+								<li>
+									Conducted interviews and reviewed applications for the internship program, ensuring
+									top student selection and preparation.
 								</li>
 							</ul>
 						</div>
 						<div className='mb-8'>
-							<p className='font-semibold text-sm'>Computer Systems TA, UVA</p>
-							<p className='text-sm mb-2'>Jan 2023 - May 2023</p>
+							<p className='font-semibold text-sm'>Software Engineer</p>
+							<p className='text-sm mb-2 italic'>Forge | May 2023 - Dec 2023</p>
 							<ul className='ml-4 list-disc text-sm'>
-								<li>Taught computer hardware and software concepts to 482 students.</li>
-								<li>Facilitated office hours and assisted with course grading.</li>
+								<li>
+									Built full-stack platform with Next.js, TypeScript, and Airtable to connect students
+									and employers.
+								</li>
+								<li>
+									Worked in Agile teams, managing tasks via Trello and contributing to code reviews.
+								</li>
+							</ul>
+						</div>
+						<div className='mb-8'>
+							<p className='font-semibold text-sm'>Computer Systems TA</p>
+							<p className='text-sm mb-2 italic'>University of Virginia | Jan 2023 - May 2023</p>
+							<ul className='ml-4 list-disc text-sm'>
+								<li>
+									Supported a class of nearly 500 students in computer hardware design and security
+									fundamentals.
+								</li>
+								<li>
+									Graded assignments and offered help during office hours for command-line tools and C
+									programming.
+								</li>
+								<li>
+									Taught data representation from bits to pointers and process representation from
+									circuits and assembly to high-level programming in C.
+								</li>
 							</ul>
 						</div>
 					</div>
