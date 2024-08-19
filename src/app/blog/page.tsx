@@ -16,7 +16,7 @@ export default function Home() {
 	};
 
 	const handleClick = (id: any) => {
-		router.push(`/post/${id}`);
+		router.push(`/blog/${id}`);
 	};
 
 	interface BlogPost {
@@ -43,7 +43,7 @@ export default function Home() {
 				<LinkList />
 			</div>
 
-			<div className='mx-14 mt-8'>
+			<div className='mx-10 mt-4'>
 				<p className='text-xl'>Articles</p>
 				{allPosts &&
 					allPosts.map((item, index) => {
@@ -53,9 +53,7 @@ export default function Home() {
 									<p className='text-sm opacity-80 group-hover:opacity-100'>{item.title}</p>
 
 									<p className='text-sm opacity-40 group-hover:opacity-60'>{item.summary}</p>
-									<p className='text-[#2915e1] text-sm opacity-40 group-hover:opacity-60'>
-										{item.created_at}
-									</p>
+									<p className='text-sm opacity-40 group-hover:opacity-60'>{item.created_at}</p>
 								</div>
 							</div>
 						);
