@@ -1,6 +1,6 @@
 'use client';
-import { useState, useEffect } from 'react';
-import styles from '../../page.module.css';
+import React, { useState, useEffect } from 'react';
+
 import Link from 'next/link';
 import axios from 'axios';
 import ReactMarkdown from 'react-markdown';
@@ -14,11 +14,11 @@ interface BlogPost {
 	content: string;
 }
 
-export default function Page({ params }: { params: { postId: string } }) {
+export default function Page({ params }: { params: { blogID: string } }) {
 	const [blogPost, setBlogPost] = useState<BlogPost | null>(null);
 	useEffect(() => {
 		const fetchBlogPost = async () => {
-			const blogPost = await axios.get(`/api/posts/${params.postId}`);
+			const blogPost = await axios.get(`/api/posts/${params.blogID}`);
 			console.log(blogPost.data);
 			setBlogPost(blogPost.data);
 		};

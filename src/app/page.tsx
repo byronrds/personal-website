@@ -3,6 +3,7 @@ import { data } from '../../dummydata';
 import { useRouter } from 'next/navigation';
 import { NextUIProvider } from '@nextui-org/react';
 import { Button, ButtonGroup } from '@nextui-org/button';
+import { Image } from '@nextui-org/image';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 // import { Sidebar } from '../components/Sidebar';
@@ -17,25 +18,25 @@ export default function Home() {
 	};
 
 	const handleClick = (id: any) => {
-		router.push(`/post/${id}`);
+		router.push(`/blog/${id}`);
 	};
 
-	interface BlogPost {
-		title: string;
-		created_at: string;
-		summary: string;
-	}
+	// interface BlogPost {
+	// 	title: string;
+	// 	created_at: string;
+	// 	summary: string;
+	// }
 
-	const [allPosts, setAllPosts] = useState<BlogPost[] | null>(null);
+	// const [allPosts, setAllPosts] = useState<BlogPost[] | null>(null);
 
-	useEffect(() => {
-		const fetchAllPostsMetadata = async () => {
-			const postsMetadata = await axios.get('/api/posts/');
-			console.log(postsMetadata);
-			setAllPosts(postsMetadata.data);
-		};
-		fetchAllPostsMetadata();
-	}, []);
+	// useEffect(() => {
+	// 	const fetchAllPostsMetadata = async () => {
+	// 		const postsMetadata = await axios.get('/api/posts/');
+	// 		console.log(postsMetadata);
+	// 		setAllPosts(postsMetadata.data);
+	// 	};
+	// 	fetchAllPostsMetadata();
+	// }, []);
 
 	return (
 		<main>
@@ -45,9 +46,8 @@ export default function Home() {
 					<div className='px-8 lg:px-12 py-8'>
 						<LinkList />
 					</div>
-					<div className='lg:flex gap-4 ml-8 lg:ml-16 lg:mt-8'>
-						{/* <RandomLinesSVG /> */}
-						<img className='h-40' src='/images/IMG_3092.JPG' />
+					<div className='lg:flex gap-4 ml-10'>
+						<Image radius='none' alt='profile pic' className='h-40' src='/images/IMG_3092.JPG' />
 						<div className='sm:my-10 lg:my-0'>
 							<p className='text-sm mt-4 lg:mt-0'>Byron Richards</p>
 							<a
@@ -72,11 +72,13 @@ export default function Home() {
 							Hi, I’m Byron, a software engineer currently working remotely in Virginia. I develop
 							innovative solutions at IT Concepts, focusing on frontend development while also working
 							with AWS serverless technologies for backend systems. I graduated with a degree in Computer
-							Science and was actively involved in Forge, where I got to teach and work on cool projects
-							with peers. In my free time, I enjoy reading, writing, running, surfing, traveling, and
-							spending time in nature. I’m passionate about entrepreneurship, exploring the impact of
-							technology on humanity, and learning about AI and its intersection with human life. I also
-							enjoy meeting new people, learning from their experiences, and helping them grow.
+							Science and was actively involved in Forge, an organization started at UVA to give students
+							space and skills to build projects beyond the classroom, where I got to teach and work on
+							cool projects with peers. In my free time, I enjoy reading, writing, running, surfing,
+							traveling, and spending time in nature. I’m passionate about entrepreneurship, exploring the
+							impact of technology on humanity, and learning about AI and its intersection with human
+							life. I also enjoy meeting new people, learning from their experiences, and helping them
+							grow.
 						</p>
 					</div>
 					<div className='mx-10 my-10'>
@@ -110,7 +112,8 @@ export default function Home() {
 								</li>
 								<li>
 									Designed and instructed 3-week, full-day (8:30 AM - 5:30 PM) summer training
-									sessions covering Git, React, Express.js, APIs (including OpenAI), and debugging.
+									sessions covering Git, React, Express.js, APIs (including OpenAI), NoSQL databases
+									(with Firebase), and debugging.
 								</li>
 								<li>
 									Conducted interviews and reviewed applications for the internship program, ensuring
@@ -136,17 +139,14 @@ export default function Home() {
 							<p className='text-sm mb-2 italic'>University of Virginia | Jan 2023 - May 2023</p>
 							<ul className='ml-4 list-disc text-sm'>
 								<li>
-									Supported a class of nearly 500 students in computer hardware design and security
-									fundamentals.
+									Supported a class of nearly 500 students in understanding data representation from
+									binary and assembly to high-level programming in C.
 								</li>
 								<li>
 									Graded assignments and offered help during office hours for command-line tools and C
 									programming.
 								</li>
-								<li>
-									Taught data representation from bits to pointers and process representation from
-									circuits and assembly to high-level programming in C.
-								</li>
+								<li>Discussed security, legal, and ethical issues related to computing.</li>
 							</ul>
 						</div>
 					</div>
