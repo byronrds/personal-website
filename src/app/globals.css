@@ -2,43 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	--foreground-rgb: 0, 0, 0; /*text*/
-	--background-rgb: 214, 219, 220; /*background*/
-	--clagnut-red: '#dc423b';
-	background-color: rgb(var(--background-rgb));
-	max-width: 1466px;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-rgb: 0, 0, 0;
-		--clagnut-red: '#dc423b';
-		--background-jason: #393c42;
-		background-color: var(--background-jason);
+@layer base {
+	html.dark {
+		background-color: #393c42; /* Dark background */
+		color: white; /* Dark text color */
 	}
-}
-/* a {
-	color: rgb(101, 143, 241);
-	text-decoration-line: underline;
-} */
-.markdown > * {
-	all: revert;
-}
 
-body {
-	color: rgb(var(--foreground-rgb));
-
-	/* background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
-}
-
-@layer utilities {
-	.text-balance {
-		text-wrap: balance;
+	html {
+		background-color: rgb(214, 219, 220); /* Light background */
+		color: black;
+		max-width: 1466px; /* Light text color */
 	}
-}
 
-.roboto_mono {
-	font-family: var(--font-roboto_mono);
+	.markdown > * {
+		all: revert;
+	}
 }

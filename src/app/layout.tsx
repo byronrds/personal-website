@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Roboto_Mono } from 'next/font/google';
 import './globals.css';
+import { Providers } from './providers';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -32,8 +33,10 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang='en'>
-			<body className={inter.className}>{children}</body>
+		<html lang='en' className={inter.className} suppressHydrationWarning>
+			<body>
+				<Providers>{children}</Providers>
+			</body>
 		</html>
 	);
 }
