@@ -48,7 +48,6 @@ export default function Home() {
 				</div>
 
 				<div className='lg:flex gap-4 ml-10'>
-					<ThemeSwitch />
 					<Image radius='none' alt='profile pic' className='h-40' src='/images/IMG_3092.JPG' />
 					<div className='sm:my-10 lg:my-0'>
 						<p className='text-sm mt-4 lg:mt-0'>Byron Richards</p>

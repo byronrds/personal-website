@@ -1,6 +1,7 @@
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import './LinkList.css';
+import { ThemeSwitch } from './ThemeSwitch';
 export const LinkList = () => {
 	const pathname = usePathname();
 
@@ -25,6 +26,8 @@ export const LinkList = () => {
 						Projects
 					</Link>
 				</li>
+				<p>|</p>
+				<ThemeSwitch />
 			</ul>
 		</div>
 	);
