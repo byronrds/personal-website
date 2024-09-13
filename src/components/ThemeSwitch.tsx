@@ -14,12 +14,12 @@ export function ThemeSwitch() {
 	if (!mounted) return null;
 
 	return (
-		<>
+		<div className='hover:cursor-pointer'>
 			{resolvedTheme === 'dark' ? (
 				<FiSun onClick={() => setTheme('light')} />
 			) : (
 				<FiMoon onClick={() => setTheme('dark')} />
 			)}
-		</>
+		</div>
 	);
 }
