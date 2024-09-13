@@ -1,13 +1,7 @@
 'use client';
-import { useState, useEffect } from 'react';
 import { LinkList } from '@/components/LinkList';
-import Link from 'next/link';
-import { LuDot } from 'react-icons/lu';
-import { GoDot, GoDotFill } from 'react-icons/go';
 import { RxDotFilled } from 'react-icons/rx';
-// import { Sidebar } from '../../components/Sidebar';
-// this will get the id of the one that is selected from the list
-//id: 0, 1, 2, 3, in dynamodb
+
 export default function page() {
 	return (
 		<div>

@@ -1,18 +1,13 @@
 import type { Metadata } from 'next';
-import { Inter, Roboto_Mono } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import { Providers } from './providers';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const roboto_mono_init = Roboto_Mono({
-	subsets: ['latin'],
-	display: 'swap',
-});
-
 export const metadata: Metadata = {
 	title: 'byronxr',
-	description: 'one mans thoughts',
+	description: '',
 	icons: {
 		icon: [
 			{

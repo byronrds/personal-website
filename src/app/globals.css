@@ -4,17 +4,20 @@
 
 @layer base {
 	html.dark {
-		background-color: #393c42 !important; /* Dark background */
-		color: white; /* Dark text color */
+		background-color: #393c42 !important;
+		color: white;
+		--link-blue: #658ff1;
 	}
 
 	html {
-		background-color: rgb(214, 219, 220) !important; /* Light background */
+		background-color: rgb(192, 197, 197) !important;
 		color: black;
-		max-width: 1466px; /* Light text color */
+		max-width: 1466px;
+		--link-blue: #3163d6;
 	}
 
 	.markdown > * {
 		all: revert;
+		font-size: 0.875rem;
 	}
 }

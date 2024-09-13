@@ -1,44 +1,8 @@
 'use client';
-import { data } from '../../dummydata';
-import { useRouter } from 'next/navigation';
-import { NextUIProvider } from '@nextui-org/react';
-import { Button, ButtonGroup } from '@nextui-org/button';
 import { Image } from '@nextui-org/image';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-// import { Sidebar } from '../components/Sidebar';
-import { Topbar } from '@/components/Topbar';
 import { LinkList } from '@/components/LinkList';
-import RandomLinesSVG from '../components/RandomLinesSVG';
-import { ThemeSwitch } from '@/components/ThemeSwitch';
 
 export default function Home() {
-	const router = useRouter();
-	const handleNavigation = () => {
-		router.push('/messy');
-	};
-
-	const handleClick = (id: any) => {
-		router.push(`/blog/${id}`);
-	};
-
-	// interface BlogPost {
-	// 	title: string;
-	// 	created_at: string;
-	// 	summary: string;
-	// }
-
-	// const [allPosts, setAllPosts] = useState<BlogPost[] | null>(null);
-
-	// useEffect(() => {
-	// 	const fetchAllPostsMetadata = async () => {
-	// 		const postsMetadata = await axios.get('/api/posts/');
-	// 		console.log(postsMetadata);
-	// 		setAllPosts(postsMetadata.data);
-	// 	};
-	// 	fetchAllPostsMetadata();
-	// }, []);
-
 	return (
 		<main>
 			<div className='lg:w-1/2 lg:m-auto'>
@@ -52,13 +16,13 @@ export default function Home() {
 					<div className='sm:my-10 lg:my-0'>
 						<p className='text-sm mt-4 lg:mt-0'>Byron Richards</p>
 						<a
-							className='text-sm text-[#658FF1] underline underline-offset-2'
+							className='text-sm text-[color:var(--link-blue)] underline underline-offset-2'
 							href='mailto:bxr@byronxr.com'>
 							bxr@byronxr.com
 						</a>
 						<p>
 							<a
-								className='text-sm text-[#658FF1] underline underline-offset-2'
+								className='text-sm text-[color:var(--link-blue)] underline underline-offset-2'
 								href='/resume.pdf'
 								target='_blank'
 								download>
@@ -75,10 +39,10 @@ export default function Home() {
 						serverless technologies for backend systems. I graduated with a degree in Computer Science and
 						was actively involved in Forge, an organization started at UVA to give students space and skills
 						to build projects beyond the classroom, where I got to teach and work on cool projects with
-						peers. In my free time, I enjoy reading, writing, running, surfing, traveling, and spending time
-						in nature. I’m passionate about entrepreneurship, exploring the impact of technology on
-						humanity, and learning about AI and its intersection with human life. I also enjoy meeting new
-						people, learning from their experiences, and helping them grow.
+						peers. In my free time, I enjoy reading, running, traveling, and building apps. I’m passionate
+						about entrepreneurship, exploring the impact of technology on humanity, and learning about AI
+						and its intersection with human life. I also enjoy meeting new people, learning from their
+						experiences, and helping them grow.
 					</p>
 				</div>
 				<div className='mx-10 my-10'>
