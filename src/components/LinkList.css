@@ -1,5 +1,5 @@
 .link.active {
-	color: #c91f1f; /* Change to the desired highlight color */
+	color: #dc423b; /* Change to the desired highlight color */
 	text-decoration-line: underline;
 }
 
@@ -8,5 +8,5 @@
 }
 
 .link:hover {
-	color: #e19615; /* Change to the desired highlight color */
+	color: #db5a0a; /* Change to the desired highlight color */
 }

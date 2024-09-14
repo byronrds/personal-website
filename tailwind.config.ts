@@ -2,6 +2,7 @@ import type { Config } from 'tailwindcss';
 const { nextui } = require('@nextui-org/react');
 
 const config: Config = {
+	darkMode: 'class', // This enables dark mode using the 'class' strategy
 	content: [
 		'./src/pages/**/*.{js,ts,jsx,tsx,mdx}',
 		'./src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -18,4 +19,5 @@ const config: Config = {
 	},
 	plugins: [nextui()],
 };
+
 export default config;
