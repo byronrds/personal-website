@@ -22,10 +22,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 	});
 
 	if (querySnapshot) {
-		console.log('Document data:', metadata);
 		res.status(200).json(metadata);
 	} else {
-		console.log('No such document!');
 		res.status(404).json({ message: 'No documents found' });
 	}
 }

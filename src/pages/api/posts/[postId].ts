@@ -10,6 +10,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 	if (docSnap.exists()) {
 		res.status(200).json({ ...docSnap.data() });
 	} else {
-		console.log('No such document!');
+		//nothing
 	}
 }
