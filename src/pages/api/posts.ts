@@ -14,10 +14,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
 	const querySnapshot = await getDocs(collection(db, 'posts'));
 	querySnapshot.forEach((doc) => {
-		const data = doc.data() as Omit<BlogPost, 'id'>; // Exclude 'id' temporarily
+		const { title, created_at, summary } = doc.data();
 		metadata.push({
 			id: doc.id, // Include the document ID here
-			...data,
+			title,
+			created_at,
+			summary,
 		});
 	});
 

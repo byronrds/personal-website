@@ -14,11 +14,23 @@ export default function Page({ params }: { params: { blogID: string } }) {
 
 	useEffect(() => {
 		const fetchBlogPost = async () => {
-			const blogPost = await axios.get(`/api/posts/${params.blogID}`);
-			setBlogPost(blogPost.data);
+			// Check if the blog post is already in sessionStorage
+			const cachedPost = sessionStorage.getItem(`blogPost-${params.blogID}`);
+			if (cachedPost) {
+				setBlogPost(JSON.parse(cachedPost));
+			} else {
+				// Fetch if not in sessionStorage
+				try {
+					const response = await axios.get(`/api/posts/${params.blogID}`);
+					setBlogPost(response.data);
+					sessionStorage.setItem(`blogPost-${params.blogID}`, JSON.stringify(response.data));
+				} catch (error) {
+					console.error('Error fetching blog post:', error);
+				}
+			}
 		};
 		fetchBlogPost();
-	}, []);
+	}, [params.blogID]);
 
 	return (
 		<div className='lg:w-1/2 lg:m-auto'>
