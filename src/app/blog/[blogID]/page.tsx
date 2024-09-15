@@ -2,6 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ReactMarkdown from 'react-markdown';
+import { FaArrowLeftLong } from 'react-icons/fa6';
+import Link from 'next/link';
+import { ThemeSwitch } from '@/components/ThemeSwitch';
 
 interface BlogPost {
 	title: string;
@@ -36,9 +39,15 @@ export default function Page({ params }: { params: { blogID: string } }) {
 		<div className='lg:w-1/2 lg:m-auto'>
 			<div className='fixed w-2 h-full bg-[#dc423b]'></div>
 			<div className='px-10 py-10 '>
+				<div className='flex justify-between'>
+					<Link href='/blog'>
+						<FaArrowLeftLong className='text-2xl' />
+					</Link>
+					<ThemeSwitch />
+				</div>
 				{blogPost && (
 					<>
-						<p className='text-sm'>{new Date(blogPost.created_at).toLocaleDateString()}</p>
+						<p className='text-sm mt-8 mb-4'>{new Date(blogPost.created_at).toLocaleDateString()}</p>
 						<ReactMarkdown className='markdown'>{blogPost.content.replace(/\\n/g, '\n')}</ReactMarkdown>
 					</>
 				)}

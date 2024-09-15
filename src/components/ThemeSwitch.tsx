@@ -16,9 +16,9 @@ export function ThemeSwitch() {
 	return (
 		<div className='hover:cursor-pointer'>
 			{resolvedTheme === 'dark' ? (
-				<FiSun onClick={() => setTheme('light')} />
+				<FiSun className='text-xl' onClick={() => setTheme('light')} />
 			) : (
-				<FiMoon onClick={() => setTheme('dark')} />
+				<FiMoon className='text-xl' onClick={() => setTheme('dark')} />
 			)}
 		</div>
 	);
