@@ -19,8 +19,20 @@ export default function Home() {
 
 	useEffect(() => {
 		const fetchAllPostsMetadata = async () => {
-			const postsMetadata = await axios.get('/api/posts/');
-			setAllPosts(postsMetadata.data);
+			// Check if the posts metadata already in sessionStorage
+			const cachedPosts = sessionStorage.getItem('allPosts');
+			if (cachedPosts) {
+				setAllPosts(JSON.parse(cachedPosts));
+			} else {
+				// Fetch the posts metadata if not in sessionStorage
+				try {
+					const response = await axios.get('/api/posts/');
+					setAllPosts(response.data);
+					sessionStorage.setItem('allPosts', JSON.stringify(response.data));
+				} catch (error) {
+					console.error('Error fetching posts metadata:', error);
+				}
+			}
 		};
 		fetchAllPostsMetadata();
 	}, []);
