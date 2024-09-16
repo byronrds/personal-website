@@ -3,6 +3,7 @@ import { useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { LinkList } from '@/components/LinkList';
+import { LoadingDots } from '@/components/LoadingDots';
 
 export default function Home() {
 	const router = useRouter();
@@ -16,6 +17,7 @@ export default function Home() {
 	}
 
 	const [allPosts, setAllPosts] = useState<BlogPost[] | null>(null);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		const fetchAllPostsMetadata = async () => {
@@ -23,14 +25,17 @@ export default function Home() {
 			const cachedPosts = sessionStorage.getItem('allPosts');
 			if (cachedPosts) {
 				setAllPosts(JSON.parse(cachedPosts));
+				setLoading(false);
 			} else {
 				// Fetch the posts metadata if not in sessionStorage
 				try {
 					const response = await axios.get('/api/posts/');
 					setAllPosts(response.data);
 					sessionStorage.setItem('allPosts', JSON.stringify(response.data));
+					setLoading(false);
 				} catch (error) {
 					console.error('Error fetching posts metadata:', error);
+					setLoading(false);
 				}
 			}
 		};
@@ -50,7 +55,9 @@ export default function Home() {
 
 			<div className='mx-10 mt-4'>
 				<p className='text-xl mb-8'>Articles</p>
+				{loading && <LoadingDots />}
 				{allPosts &&
+					!loading &&
 					allPosts.map((item) => (
 						<div key={item.id} className='mb-8' onClick={() => handleClick(item.id)}>
 							<div className='group hover:cursor-pointer'>
