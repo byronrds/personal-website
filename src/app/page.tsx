@@ -34,15 +34,19 @@ export default function Home() {
 
 				<div className='mx-10 my-10'>
 					<p className='text-sm'>
-						Hi, I’m Byron, a software engineer currently working remotely in Virginia. I develop innovative
-						solutions at IT Concepts, focusing on frontend development while also working with AWS
-						serverless technologies for backend systems. I graduated with a degree in Computer Science and
-						was actively involved in Forge, an organization started at UVA to give students space and skills
-						to build projects beyond the classroom, where I got to teach and work on cool projects with
-						peers. In my free time, I enjoy reading, running, traveling, and building apps. I’m passionate
-						about entrepreneurship, exploring the impact of technology on humanity, and learning about AI
-						and its intersection with human life. I also enjoy meeting new people, learning from their
-						experiences, and helping them grow.
+						Hi, I’m Byron, a software engineer currently working remotely from Virginia. At IT Concepts, I
+						focus on developing innovative frontend solutions and working with AWS serverless technologies
+						on the backend. I graduated with a degree in Computer Science and was actively involved in
+						Forge, a UVA-based organization that empowers students to collaborate on real-world projects and
+						startups. Through Forge, I had the opportunity to teach and work closely with peers, honing my
+						skills in teamwork, communication, and problem-solving.
+					</p>
+					<br></br>
+					<p className='text-sm'>
+						In my free time, I enjoy reading, running, traveling, and thinking about new business ideas. I’m
+						passionate about entrepreneurship, exploring the impact of technology on humanity, and learning
+						about AI and its intersection with human life. I also enjoy meeting new people, learning from
+						their experiences, and helping them grow.
 					</p>
 				</div>
 				<div className='mx-10 my-10'>
