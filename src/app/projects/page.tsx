@@ -29,6 +29,22 @@ export default function page() {
 							<p>Tailwind</p>
 						</div>
 					</div>
+					<br></br>
+					<div>
+						<p className='text-sm mb-2 font-semibold'>Employee Mobile App</p>
+						<p className='text-sm'>
+							An employee resource hub providing tools on the go, with a reward system where users submit
+							forms, and data is stored in SharePoint and fetched into the app. Built with React Native
+							(Expo) and a serverless backend, integrating with Microsoft API for work account sign-in.
+						</p>
+						<div className='mt-1 text-sm opacity-50 flex gap-2 items-center'>
+							<p>React Native</p>
+							<RxDotFilled />
+							<p>AWS</p>
+							<RxDotFilled />
+							<p>Microsoft API</p>
+						</div>
+					</div>
 
 					<br></br>
 					<div>
