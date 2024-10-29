@@ -67,12 +67,12 @@ export default function Home() {
 						<p className='text-sm mb-2 italic'>Forge | Aug 2022 - June 2024</p>
 					</div>
 					<div className='mb-8'>
-						<p className='font-semibold text-sm'>Software Engineering Intern</p>
-						<p className='text-sm mb-2 italic'>IT Concepts | June 2023 - Aug 2023</p>
+						<p className='font-semibold text-sm'>Software Engineer</p>
+						<p className='text-sm mb-2 italic'>Forge | Sep 2023 - Dec 2024</p>
 					</div>
 					<div className='mb-8'>
-						<p className='font-semibold text-sm'>Software Engineer</p>
-						<p className='text-sm mb-2 italic'>Forge | May 2023 - Dec 2023</p>
+						<p className='font-semibold text-sm'>Software Engineering Intern</p>
+						<p className='text-sm mb-2 italic'>IT Concepts | June 2023 - Aug 2023</p>
 					</div>
 					<div className='mb-8'>
 						<p className='font-semibold text-sm'>Computer Systems TA</p>
