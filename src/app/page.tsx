@@ -68,7 +68,7 @@ export default function Home() {
 					</div>
 					<div className='mb-8'>
 						<p className='font-semibold text-sm'>Software Engineer</p>
-						<p className='text-sm mb-2 italic'>Forge | Sep 2023 - Dec 2024</p>
+						<p className='text-sm mb-2 italic'>Forge | Sep 2023 - Feb 2024</p>
 					</div>
 					<div className='mb-8'>
 						<p className='font-semibold text-sm'>Software Engineering Intern</p>
