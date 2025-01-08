@@ -1,46 +1,10 @@
 'use client';
 import { useRouter } from 'next/navigation';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
 import { LinkList } from '@/components/LinkList';
-import { LoadingDots } from '@/components/LoadingDots';
+import blogs from '../../../blog_data/blog_data.json'
 
 export default function Home() {
 	const router = useRouter();
-
-	// Interface includes the id
-	interface BlogPost {
-		id: string;
-		title: string;
-		created_at: string;
-		summary: string;
-	}
-
-	const [allPosts, setAllPosts] = useState<BlogPost[] | null>(null);
-	const [loading, setLoading] = useState(true);
-
-	useEffect(() => {
-		const fetchAllPostsMetadata = async () => {
-			// Check if the posts metadata already in sessionStorage
-			const cachedPosts = sessionStorage.getItem('allPosts');
-			if (cachedPosts) {
-				setAllPosts(JSON.parse(cachedPosts));
-				setLoading(false);
-			} else {
-				// Fetch the posts metadata if not in sessionStorage
-				try {
-					const response = await axios.get('/api/posts/');
-					setAllPosts(response.data);
-					sessionStorage.setItem('allPosts', JSON.stringify(response.data));
-					setLoading(false);
-				} catch (error) {
-					console.error('Error fetching posts metadata:', error);
-					setLoading(false);
-				}
-			}
-		};
-		fetchAllPostsMetadata();
-	}, []);
 
 	const handleClick = (id: string) => {
 		router.push(`/blog/${id}`);
@@ -55,10 +19,8 @@ export default function Home() {
 
 			<div className='mx-10 mt-4'>
 				<p className='text-xl mb-8'>Articles</p>
-				{loading && <LoadingDots />}
-				{allPosts &&
-					!loading &&
-					allPosts.map((item) => (
+				{
+					blogs.map((item) => (
 						<div key={item.id} className='mb-8' onClick={() => handleClick(item.id)}>
 							<div className='group hover:cursor-pointer'>
 								<p className='text-sm opacity-80 group-hover:opacity-100 mb-2'>{item.title}</p>

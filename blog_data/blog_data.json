@@ -1,0 +1,17 @@
+[
+    {
+      "id": "1",
+      "title": "Introduction to My Blog",
+      "created_at": "2025-01-01",
+      "summary": "A quick overview of what this blog is about.",
+      "content": "This is the detailed content of the blog post."
+    },
+    {
+      "id": "2",
+      "title": "Next.js Tips and Tricks",
+      "created_at": "2025-01-05",
+      "summary": "Enhance your Next.js projects with these tips.",
+      "content": "Detailed content about Next.js tips."
+    }
+  ]
+  
