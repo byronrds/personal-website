@@ -36,7 +36,7 @@ export default function Page({ params }: { params: { blogID: string } }) {
             </Link>
             <ThemeSwitch />
           </div>
-          <p className='text-sm mt-8'>Blog post not found.</p>
+          <p className='text-md mt-8'>Blog post not found.</p>
         </div>
       </div>
     );
