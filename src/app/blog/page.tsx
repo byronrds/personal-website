@@ -58,9 +58,9 @@ export default function Home() {
         {blogs.map((item) => (
           <div key={item.id} className='mb-8' onClick={() => handleClick(item.id)}>
             <div className='group hover:cursor-pointer'>
-              <p className='text-sm opacity-80 group-hover:opacity-100 mb-2'>{item.title}</p>
-              <p className='text-sm opacity-40 group-hover:opacity-60 mb-2'>{item.summary}</p>
-              <p className='text-sm opacity-40 group-hover:opacity-60 mb-2'>{item.created_at}</p>
+              <p className='text-md opacity-80 group-hover:opacity-100 mb-1'>{item.title}</p>
+              <p className='text-md opacity-40 group-hover:opacity-60 mb-1'>{item.summary}</p>
+              <p className='text-md opacity-40 group-hover:opacity-60 mb-2'>{item.created_at}</p>
             </div>
           </div>
         ))}
