@@ -34,7 +34,7 @@ export default function Home() {
 
 				<div className='mx-10 my-10'>
 					<p className='text-md'>
-						Hi, I’m Byron, a software engineer currently working remotely from Virginia. At IT Concepts, I
+						Hi, I’m Byron, a software engineer currently working remotely from New York City. At IT Concepts, I
 						focus on developing innovative frontend solutions and working with AWS serverless technologies
 						on the backend. I graduated with a degree in Computer Science and was actively involved in
 						Forge, a UVA-based organization that empowers students to collaborate on real-world projects and
