@@ -16,7 +16,7 @@ export const LoadingDots = () => {
 	return (
 		<div className='flex'>
 			{[...Array(dotCount)].map((_, index) => (
-				<FaCircle key={index} className='text-sm mx-1 opacity-40' />
+				<FaCircle key={index} className='text-md mx-1 opacity-40' />
 			))}
 		</div>
 	);
