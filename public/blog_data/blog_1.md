@@ -18,7 +18,7 @@ This variability becomes even more apparent when you consider that a single inte
 Beyond the complexity of the interpreter, there’s also complexity in the input itself. Spoken language, in particular, isn’t just about the words being said. It also includes tone, body language, and other subtle cues that are all processed along with the actual text. A phrase like “You’re brilliant” could be interpreted as a sincere compliment, a sarcastic jab, or even a backhanded remark depending on how it’s delivered.
 
 
-So, complexity arises at both the input and interpreter levels. On the input side, there are subtle cues such as tone and body language. On the interpreter side, there is the state of mind of the person receiving the message.
+So, confusion arises at both the input and interpreter levels. On the input side, there are subtle cues such as tone and body language. On the interpreter side, there is the state of mind of the person receiving the message.
 
 Lastly, as mentioned earlier, there’s the fact that there are multiple interpreters, with each brain shaped by unique life experiences, personality, and perspective. No two people interpret a statement in exactly the same way because no two people have identical interpreting systems. It’s as if each of us is running a slightly different version of the same software. For instance, one person with a rich vocabulary and deep understanding of a topic might catch subtle nuances in conversation, while another might miss them entirely.
 
@@ -26,18 +26,7 @@ Lastly, as mentioned earlier, there’s the fact that there are multiple interpr
 
 While formal languages like those used in programming offer clarity and consistency, natural languages remind us of the complexity and richness of human communication. The next time you find yourself in a conversation, remember that your words are being processed by a unique interpreter. And just like with programming, refining your inputs (words, tone, and body language) can lead to better, more accurate outputs.
 
-Understanding this complexity is the first step in becoming a better communicator. As technology advances, we may get closer to bridging these gaps in understanding. It’s dystopian, but innovations like neural interfaces, such as Neuralink, suggest a future where someone could understand exactly what you're thinking, or even simulate your brain’s context to better interpret your thoughts.\n\n
+Understanding this complexity is the first step in becoming a better communicator. As technology advances, we may get closer to bridging these gaps in understanding. It’s dystopian, but innovations like neural interfaces, such as Neuralink, suggest a future where someone could understand exactly what you're thinking, or even simulate your brain’s context to better interpret your thoughts.
 
 For now, we navigate the nuances, doing our best to ensure that what we say is what we mean, and that it is understood as intended, though we can never be perfect.
 
-
-
-
-
-
-### Next blog post: What’s Next for Machines—and Us?
-As we think more about how computers and humans process language and information, an intriguing question arises: are we deterministic or nondeterministic machines? *(Note: In this context, I’m using “deterministic” and “nondeterministic” as they apply in computational theory—where deterministic refers to being in only one state at a time, and nondeterministic refers to being in many states at once, not the more commonly used sense of one input leading to one specific outcome.)*
-
-Computers, currently, are deterministic—locked into one state at a time, but what if they could be in multiple states at once? That’s the promise of quantum computing, and it raises philosophical questions about the future of machines.
-
-In my next post, I’ll dive deeper into this, discussing deterministic and nondeterministic automata (DFA and NFA), the nature of quantum computing, and what these advances might mean for us.
