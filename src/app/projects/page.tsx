@@ -19,15 +19,16 @@ export default function page() {
 							features facial recognition sign-out powered by face-api.js. It is dockerized and runs on
 							ECS.
 						</p>
-						<div className='mt-1 text-md opacity-50 flex gap-2 items-center'>
-							<p>React</p>
-							<RxDotFilled />
-							<p>AWS</p>
-							<RxDotFilled />
-							<p>Docker</p>
-							<RxDotFilled />
-							<p>Tailwind</p>
-						</div>
+						<div className="mt-1 text-md opacity-50 flex flex-wrap gap-2 items-center sm:flex-row sm:gap-2 sm:items-center">
+  <p>React</p>
+  <RxDotFilled />
+  <p>AWS</p>
+  <RxDotFilled />
+  <p>Docker</p>
+  <RxDotFilled />
+  <p>Tailwind</p>
+</div>
+
 					</div>
 					<br></br>
 					<div>
@@ -37,7 +38,7 @@ export default function page() {
 							forms, and data is stored in SharePoint and fetched into the app. Built with React Native
 							(Expo) and a serverless backend, integrating with Microsoft API for work account sign-in.
 						</p>
-						<div className='mt-1 text-md opacity-50 flex gap-2 items-center'>
+						<div className="mt-1 text-md opacity-50 flex flex-wrap gap-2 items-center sm:flex-row sm:gap-2 sm:items-center">
 							<p>React Native</p>
 							<RxDotFilled />
 							<p>AWS</p>
@@ -54,7 +55,7 @@ export default function page() {
 							AirTable for backend management, enabling seamless filtering and messaging between talent
 							and companies.
 						</p>
-						<div className='mt-1 text-md opacity-50 flex gap-2 items-center'>
+						<div className="mt-1 text-md opacity-50 flex flex-wrap gap-2 items-center sm:flex-row sm:gap-2 sm:items-center">
 							<p>Next.js</p>
 							<RxDotFilled />
 							<p>Airtable</p>
@@ -68,7 +69,7 @@ export default function page() {
 							This app! A simple, clean portfolio showcasing my work. Built with Next.js, styled with
 							Tailwind CSS, and connected to Google Firestore for blog data.
 						</p>
-						<div className='mt-1 text-md opacity-50 flex gap-2 items-center'>
+						<div className="mt-1 text-md opacity-50 flex flex-wrap gap-2 items-center sm:flex-row sm:gap-2 sm:items-center">
 							<p>Next.js</p>
 							<RxDotFilled />
 							<p>Tailwind</p>
