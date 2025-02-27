@@ -13,13 +13,13 @@ export const LinkList = () => {
 						Me
 					</Link>
 				</li>
-				<p>|</p>
+				{/* <p>|</p>
 
 				<li>
 					<Link className={`link ${pathname === '/blog' ? 'active' : ''}`} href='/blog'>
 						Blog
 					</Link>
-				</li>
+				</li> */}
 				<p>|</p>
 				<li>
 					<Link className={`link ${pathname === '/projects' ? 'active' : ''}`} href='/projects'>
