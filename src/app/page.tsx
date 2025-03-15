@@ -29,6 +29,14 @@ export default function Home() {
 								Resume (PDF)
 							</a>
 						</p>
+						<p>
+							<a
+								className='text-md text-[color:var(--link-blue)] underline underline-offset-2'
+								href='https://github.com/byro18'
+								target='_blank'>
+								GitHub
+							</a>
+						</p>
 					</div>
 				</div>
 
