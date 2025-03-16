@@ -1,36 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Personal Website
 
-## Getting Started
+This is my personal website built with Next.js and styled with Tailwind CSS. It serves as my portfolio, blog (hopefully), and a place to showcase my projects and skills. 
 
-First, run the development server:
+# Tech Stack
+- Frontend: Next.js, React, Tailwind CSS
+- Deployment: Vercel 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# What About the Backend? 
+Next.js is a full-stack React framework, meaning it comes with both frontend and backend capabilities out of the box. It allows for server-side rendering (SSR), API routes, and backend logic all within the same project, without needing a separate backend service. This is what makes Next.js so cool!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Initially, I stored my blog posts in Google Firestore, fetching them dynamically. However, I decided to remove the database dependency–and thus, the backend aspect of Next.js—and instead store my blog data directly in the codebase. This backend logic was removed around commit `1af0e57`, where I deleted the `/pages/api` directory that previously handled dynamic fetching. Since I don’t have that many blog posts yet, I thought it made more sense to serve everything at once rather than making extra requests to an external database.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Some might argue this is a bad approach because every time I want to add a blog post, I have to redeploy the entire app. However, this is very easy with modern hosting platforms like Vercel, where all I need to do is push to the main branch, and the app is automatically redeployed since it’s connected to GitHub.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+That said, if my blog grows, I might reconsider using a database again for better scalability.
