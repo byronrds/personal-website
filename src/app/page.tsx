@@ -23,7 +23,7 @@ export default function Home() {
 						<p>
 							<a
 								className='text-md text-[color:var(--link-blue)] underline underline-offset-2'
-								href='/resume.pdf'
+								href='/Byron_Richards_Resume.pdf'
 								target='_blank'
 								download>
 								Resume (PDF)
